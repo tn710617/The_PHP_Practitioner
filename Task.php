@@ -1,7 +1,7 @@
 <?php
 
 
-class Task {
+class Task{
 
     public $description;
     public $completed;
