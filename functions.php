@@ -8,10 +8,3 @@ function dd ($data)
 }
 
 
-function fetchAllTask ($pdo)
-{
-    $statement = $pdo->prepare('select * from mytodo');
-    $statement->execute();
-
-    return $statement->fetchAll(PDO::FETCH_CLASS, 'Task');
-}
