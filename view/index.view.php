@@ -5,6 +5,7 @@
     <title>Document</title>
 </head>
 <body>
+<h1>My Tasks</h1>
 <ul>
     <?php foreach ($tasks as $task) : ?>
         <li>

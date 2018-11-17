@@ -1,6 +1,6 @@
 <?php
-require_once 'database/Connection.php';
-require_once 'database/QueryBuilder.php';
+require_once 'core/database/Connection.php';
+require_once 'core/database/QueryBuilder.php';
 
 $config = require_once 'config.php';
 

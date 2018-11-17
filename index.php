@@ -1,8 +1,8 @@
 <?php
 require_once 'functions.php';
 
-$query = require_once 'bootstrap.php';
+$query = require_once 'core/bootstrap.php';
 
 $tasks = $query->selectAll('mytodo');
 
-require_once 'index.view.php';
+require_once 'view/index.view.php';
