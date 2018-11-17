@@ -1,8 +1,8 @@
 <?php
 require_once 'functions.php';
+require_once 'core/Router.php';
 
-$query = require_once 'core/bootstrap.php';
+$router = new Router;
 
-$tasks = $query->selectAll('mytodo');
-
-require_once 'view/index.view.php';
+require_once 'routes.php';
+require_once $router->direct($_SERVER['REQUEST_URI']);
