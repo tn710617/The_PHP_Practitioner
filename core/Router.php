@@ -2,19 +2,26 @@
 
 
 class Router {
-public $routes;
-public function define ($routes)
-{
-    $this->routes = $routes;
-}
-
-public function direct ($uri)
-{
-    $uri = trim($uri, '/');
-    if(array_key_exists($uri, $this->routes))
+    public $routes;
+    public static function load($file)
     {
-        return $this->routes[$uri];
+        $router = new static;
+        require_once $file;
+        return $router;
     }
-    throw new Exception('Could not connect');
-}
+
+    public function define($routes)
+    {
+        $this->routes = $routes;
+    }
+
+    public function direct($uri)
+    {
+        if (array_key_exists($uri, $this->routes))
+        {
+            return $this->routes[$uri];
+        }
+        throw new Exception('Could not connect');
+    }
+
 }
