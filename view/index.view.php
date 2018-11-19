@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-<h1>My Tasks</h1>
+<?php
+require_once 'partial/head.php';
+require_once 'partial/nav.php';
+?>
+    <h1>My Tasks</h1>
 <ul>
     <?php foreach ($tasks as $task) : ?>
         <li>
@@ -17,5 +14,5 @@
         </li>
     <?php endforeach; ?>
 </ul>
-</body>
-</html>
+<?php
+require_once 'partial/footer.php';
