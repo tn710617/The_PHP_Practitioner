@@ -18,8 +18,8 @@ $posts = [
     new Post('My fourth post', false)
 ];
 
-$unpublished= array_filter($posts, function($post) {
-    return ! $post->published;
-});
+$beTurnedToArray = array_map(function($post){
+    return (array) $post;
+}, $posts);
 
-var_dump($unpublished);
+var_dump($beTurnedToArray);
