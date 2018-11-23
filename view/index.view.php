@@ -2,6 +2,11 @@
 require_once 'partial/head.php';
 require_once 'partial/nav.php';
 ?>
+<?php foreach($users as $user): ?>
+<li>
+    <?= $user->name ?>
+</li>
+    <?php endforeach; ?>
     <h1>Submit Your Name</h1>
 <form method='post' action ="/names">
     <input style="text" name="name">

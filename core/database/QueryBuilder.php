@@ -18,9 +18,17 @@ class QueryBuilder {
         return $statement->fetchAll(PDO::FETCH_CLASS);
     }
 
-    public function insert($table, $value)
+    public function insert($table, $parameters)
     {
-        $statement = $this->pdo->prepare("INSERT INTO $table (description) VALUE (?)");
-        $statement -> execute([$value]);
+        $sql = sprintf(
+            'insert into %s (%s) values (%s)',
+            $table ,
+            implode(', ', array_keys($parameters)),
+            ':'.implode(', :', array_keys($parameters))
+        );
+
+        $statement = $this->pdo->prepare($sql);
+        $statement->execute($parameters);
+
     }
 }

@@ -1,4 +1,4 @@
 <?php
-$tasks = $app['database']->selectAll('mytodo');
+$users= $app['database']->selectAll('user');
 
 require_once 'view/index.view.php';
