@@ -6,7 +6,7 @@ class PagesController {
     {
         $users= App::get('database')->selectAll('user');
 
-        return view('index');
+        return view('index', compact('users'));
     }
 
     public function contact ()
