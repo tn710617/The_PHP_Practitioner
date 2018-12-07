@@ -6,3 +6,7 @@ App::bind('database', new QueryBuilder(
     Connection::make(App::get('config')['database'])
 ));
 
+function view ($name)
+{
+    return require_once "view/{$name}.view.php";
+}

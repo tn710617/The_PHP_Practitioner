@@ -6,16 +6,16 @@ class PagesController {
     {
         $users= App::get('database')->selectAll('user');
 
-        require_once 'view/index.view.php';
+        return view('index');
     }
 
     public function contact ()
     {
-        require_once 'view/contact.view.php';
+        return view('contact');
     }
 
     public function about ()
     {
-        require_once 'view/about.view.php';
+        return view('about');
     }
 }
