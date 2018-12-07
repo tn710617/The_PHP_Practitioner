@@ -3,6 +3,6 @@
 $router->get('home', 'PagesController@home');
 $router->get('about', 'PagesController@about');
 $router->get('contact', 'PagesController@contact');
-$router->post('names', 'controllers/add-name.php');
+$router->post('users', 'UsersController@store');
 
-$router->get('', 'UsersController@index');
+$router->get('users', 'UsersController@index');

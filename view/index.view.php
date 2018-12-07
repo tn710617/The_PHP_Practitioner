@@ -8,7 +8,7 @@ require_once 'partial/nav.php';
 </li>
     <?php endforeach; ?>
     <h1>Submit Your Name</h1>
-<form method='post' action ="/names">
+<form method='post' action ="/users">
     <input style="text" name="name">
     <button type="submit">Submit</button>
 </form>
