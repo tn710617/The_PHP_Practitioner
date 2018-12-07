@@ -44,4 +44,5 @@ class Router {
         $controller = new $controller;
         return $controller->$action();
     }
+
 }
