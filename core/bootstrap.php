@@ -11,7 +11,7 @@ App::bind('database', new QueryBuilder(
 function view ($name, $data = [])
 {
     extract($data);
-    return require_once "view/{$name}.view.php";
+    return require_once "app/view/{$name}.view.php";
 }
 
 function redirect ($location)

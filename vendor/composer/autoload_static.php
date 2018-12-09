@@ -7,8 +7,8 @@ namespace Composer\Autoload;
 class ComposerStaticInite5cc66066622b64b0a16bdc7dfaba047
 {
     public static $classMap = array (
-        'App\\Controllers\\PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
-        'App\\Controllers\\UsersController' => __DIR__ . '/../..' . '/controllers/UsersController.php',
+        'App\\Controllers\\PagesController' => __DIR__ . '/../..' . '/app/controllers/PagesController.php',
+        'App\\Controllers\\UsersController' => __DIR__ . '/../..' . '/app/controllers/UsersController.php',
         'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
         'App\\Core\\Request' => __DIR__ . '/../..' . '/core/Request.php',
         'App\\Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
@@ -17,6 +17,7 @@ class ComposerStaticInite5cc66066622b64b0a16bdc7dfaba047
         'Composer\\Autoload\\ComposerStaticInite5cc66066622b64b0a16bdc7dfaba047' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
         'Post' => __DIR__ . '/../..' . '/Filtering_arrays/ararys.php',
+        'Projects' => __DIR__ . '/../..' . '/app/Models/Projects.php',
         'QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',
     );
 
