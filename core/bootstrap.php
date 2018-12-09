@@ -1,4 +1,6 @@
 <?php
+use App\Core\App;
+
 require_once 'functions.php';
 App::bind('config', require 'config.php');
 
